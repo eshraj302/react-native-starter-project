@@ -1,10 +1,5 @@
-export interface ColorsType {
-    PRIMARY: string,
-    SECONDARY: string,
-    ACCENT: string,
-};
 
-const Colors: ColorsType = {
+const Colors = {
     PRIMARY: 'red',
     SECONDARY: 'green',
     ACCENT: 'blue',

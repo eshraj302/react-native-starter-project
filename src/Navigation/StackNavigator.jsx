@@ -2,11 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeScreen } from '../Screens';
 
-export type HomeStackParamList = {
-    Home: undefined;
-};
-
-const Stack = createStackNavigator<HomeStackParamList>();
+const Stack = createStackNavigator();
 
 export default () => {
     return (
