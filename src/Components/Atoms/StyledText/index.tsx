@@ -1,19 +1,19 @@
 import React from 'react';
 import { Text, StyleProp, TextStyle } from 'react-native';
-import {Colors, ColorsType, FontsType} from '../../../Constants';
+import {Colors, Fonts, FontsType} from '../../../Constants';
 
 interface StyleTextProps {
     children: React.ReactNode,
     variant ?: keyof FontsType,
     size ?: number,
-    color ?: keyof ColorsType,
+    color ?: string,
     textStyle ?: StyleProp<TextStyle>
 };
 
 export default ({children, variant, size, color, textStyle}: StyleTextProps) => {
 
     const style = {
-        fontFamily: variant,
+        fontFamily: Fonts[variant],
         color: Colors[color],
         fontSize: size,
     };
